@@ -16,6 +16,8 @@ public class PlayerFire : MonoBehaviour
         //use instatuate to clone the projectille and keep the result in our varible 
         cloneprojectille = Instantiate(projectilleprefab);
 
+        //position the projectile on the player 
+        cloneprojectille.transform.position = transform.position; //OPTIONAL : Add an offset (use a public varable) 
 
         //fire it in a direction
         // declare a variable to hold the cloned objects rigedbody 
@@ -25,9 +27,5 @@ public class PlayerFire : MonoBehaviour
         //set the velocity on the rigeedbody to the editor setting 
         projectillerigidbody.velocity = projectillevelocity;
     }
-
-
-
-
 
 }
