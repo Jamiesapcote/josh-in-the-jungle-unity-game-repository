@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02141838fd4deb74d9902f23a8491695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 300
+  jumpForce: 800
   groundTag: Ground
 --- !u!70 &4512223994097999158
 CapsuleCollider2D:

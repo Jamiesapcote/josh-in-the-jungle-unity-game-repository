@@ -21,8 +21,18 @@ public class PlayerMovement : MonoBehaviour
         Animator ourAnimator = GetComponent<Animator>();
 
         //Tell our aniamtor what the speeds are 
-        ourAnimator.SetFloat("speedH", currentSpeedH);
+        ourAnimator.SetFloat("speedH", Mathf.Abs(currentSpeedH));
         ourAnimator.SetFloat("speedV", currentSpeedV);
+
+        SpriteRenderer ourSprite = GetComponent<SpriteRenderer>();
+        if (currentSpeedH < 0)
+        {
+            ourSprite.flipX = true;
+        }
+        if (currentSpeedH > 0) 
+        {
+            ourSprite.flipX = false;
+        }
 
     }
     //these will be called by each button for movment 
