@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1810247372869600507}
   - component: {fileID: 1810247372869600500}
   - component: {fileID: 175237774}
+  - component: {fileID: 6673439953342245332}
   m_Layer: 8
   m_Name: snake
   m_TagString: 'enemy '
@@ -154,3 +155,16 @@ MonoBehaviour:
   - {x: 0.61, y: -3.3}
   - {x: -1.92, y: -3.38}
   stopDistance: 0.1
+--- !u!114 &6673439953342245332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810247372869600511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162c23bff1b2be94289bca400bc2ed48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KillValue: 10

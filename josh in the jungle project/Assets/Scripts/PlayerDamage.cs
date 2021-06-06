@@ -22,13 +22,23 @@ public class PlayerDamage : MonoBehaviour
     //ACTION : Kill the enemy using dedtroy 
     public void killEnemy(GameObject enemy)
     {
+
+        //chech if the enemy has the "scoreKill" component
+        ScoreKill scoreKillScript = enemy.GetComponent<ScoreKill>();
+        if (scoreKillScript != null)
+        { 
+            //this means our enemy has a score value 
+            Score playerScore = FindObjectOfType<Score>();
+
+            //add the value from scorekillscript
+            playerScore.AddScore(scoreKillScript.KillValue);
+        }
+
+
+        //destroy the enemy
         Destroy(enemy);
 
 
     }
-
-
-
-
 
 }
