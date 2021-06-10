@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/start.unity
+    guid: f967c3e955271754c86b64383cea792a
+  - enabled: 1
     path: Assets/Scenes/Level1_Scene_for_Joshes_adenture.unity
     guid: f0b1f2b237028d448b69b211f9cdc441
   - enabled: 1
